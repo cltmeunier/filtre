@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Administration de la collection</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="admin">
+    <header class="entete">
+      <h1>Administration de la collection</h1>
+      <a href="index.html" class="lien">Retour au site</a>
+    </header>
+
+    <main>
+      <p class="erreur" data-erreur hidden></p>
+      <div class="choix-brouillon" data-choix hidden></div>
+      <p class="bandeau" data-bandeau hidden></p>
+
+      <div class="colonnes">
+        <section data-formulaire></section>
+
+        <section>
+          <div class="pilotage">
+            <h2>Collection</h2>
+            <button type="button" data-exporter class="primaire">Télécharger games.json</button>
+          </div>
+          <ul class="liste-admin" data-liste></ul>
+        </section>
+      </div>
+
+      <ul class="erreur" data-erreurs hidden></ul>
+    </main>
+
+    <script type="module">
+      import { initAdmin } from './js/admin.js';
+
+      try {
+        await initAdmin(document.querySelector('body'));
+      } catch (erreur) {
+        const zone = document.querySelector('[data-erreur]');
+        zone.textContent = `Impossible de charger la collection : ${erreur.message}`;
+        zone.hidden = false;
+      }
+    </script>
+  </body>
+</html>

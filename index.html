@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quel jeu ce soir ?</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="entete">
+      <h1>Quel jeu ce soir ?</h1>
+      <nav class="onglets" role="tablist">
+        <button type="button" role="tab" data-vue="assistant" aria-selected="true">Choisir vite</button>
+        <button type="button" role="tab" data-vue="collection" aria-selected="false">Collection</button>
+      </nav>
+    </header>
+
+    <main>
+      <p class="erreur" data-erreur hidden></p>
+
+      <section id="assistant" class="vue"></section>
+
+      <section id="collection" class="vue" hidden>
+        <form class="filtres" data-filtres>
+          <label>
+            Rechercher
+            <input type="search" name="recherche" value="" placeholder="Nom du jeu" />
+          </label>
+
+          <label>
+            Joueurs
+            <select name="joueurs">
+              <option value="">Tous</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </label>
+
+          <label>
+            Durée
+            <select name="duree">
+              <option value="">Toutes</option>
+              <option value="30">30 min ou moins</option>
+              <option value="60">1 h ou moins</option>
+              <option value="90">1 h 30 ou moins</option>
+              <option value="plus">Plus d’1 h 30</option>
+            </select>
+          </label>
+
+          <label>
+            Type
+            <select name="type">
+              <option value="">Tous</option>
+              <option value="coop">Coopératif</option>
+              <option value="competitif">Compétitif</option>
+              <option value="semi-coop">Semi-coopératif</option>
+              <option value="un-contre-tous">Un contre tous</option>
+            </select>
+          </label>
+
+          <label>
+            Complexité
+            <select name="complexite">
+              <option value="">Toutes</option>
+              <option value="leger">Léger</option>
+              <option value="moyen">Moyen</option>
+              <option value="costaud">Costaud</option>
+            </select>
+          </label>
+
+          <label>
+            Tags
+            <input
+              type="text"
+              name="tagSaisie"
+              list="tags-collection"
+              placeholder="Ajouter un tag"
+              autocomplete="off"
+            />
+          </label>
+          <datalist id="tags-collection" data-tags></datalist>
+
+          <label>
+            Trier par
+            <select name="tri">
+              <option value="nom">Nom</option>
+              <option value="duree">Durée</option>
+              <option value="complexite">Complexité</option>
+              <option value="joueurs">Nombre de joueurs</option>
+            </select>
+          </label>
+
+          <button type="reset" class="lien">Réinitialiser</button>
+        </form>
+
+        <div class="resultat-collection">
+          <div class="filtres-actifs" data-actifs hidden></div>
+          <p class="compteur" data-compteur></p>
+          <div data-liste></div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module">
+      import { chargerJeux } from './js/data.js';
+      import { initAssistant } from './js/assistant.js';
+      import { initCollection } from './js/collection.js';
+
+      // Les chemins d'image sont saisis à la main : une vignette cassée disparaît au lieu de s'afficher brisée.
+      document.addEventListener(
+        'error',
+        (evenement) => {
+          if (evenement.target.matches('img.vignette')) evenement.target.remove();
+        },
+        true,
+      );
+
+      const vues = document.querySelectorAll('.vue');
+      const onglets = document.querySelectorAll('[data-vue]');
+      onglets.forEach((onglet) => {
+        onglet.addEventListener('click', () => {
+          onglets.forEach((o) => o.setAttribute('aria-selected', String(o === onglet)));
+          vues.forEach((vue) => {
+            vue.hidden = vue.id !== onglet.dataset.vue;
+          });
+        });
+      });
+
+      try {
+        const { jeux, invalides } = await chargerJeux();
+        if (!jeux.length) throw new Error('la collection est vide');
+        initAssistant(document.querySelector('#assistant'), jeux);
+        initCollection(document.querySelector('#collection'), jeux);
+        if (invalides.length) {
+          const zone = document.querySelector('[data-erreur]');
+          zone.textContent = `${invalides.length} fiche(s) mal renseignée(s) ont été ignorées (détail dans la console).`;
+          zone.hidden = false;
+        }
+      } catch (erreur) {
+        const zone = document.querySelector('[data-erreur]');
+        zone.textContent = `Impossible de charger la collection : ${erreur.message}`;
+        zone.hidden = false;
+        document.querySelector('#assistant').hidden = true;
+      }
+    </script>
+  </body>
+</html>
