@@ -55,6 +55,13 @@ qui fait mal les deux.
 | `type` | énum | `coop`, `competitif`, `semi-coop`, `un-contre-tous` |
 | `complexite` | décimal 1–5 | échelle de type « weight » BGG |
 | `tags` | tableau de strings | libre, en minuscules |
+| `bggId` | entier, facultatif | identifiant BoardGameGeek de la fiche |
+| `image` | string, facultatif | chemin relatif (`img/spirit-island.jpg`) ou URL complète |
+
+Le champ `image` est un chemin plutôt qu'une convention de nommage
+automatique : l'extension, le nom du fichier et la possibilité de pointer vers
+une URL externe restent à la main du propriétaire. Une image absente ou
+introuvable ne dégrade rien — la vignette disparaît simplement.
 
 Les données sont saisies à la main. Chaque champ ajouté coûte du temps
 multiplié par le nombre de jeux, d'où ce modèle volontairement maigre.
@@ -78,7 +85,7 @@ Chaque critère produit une valeur entre 0 et 1.
 
 **Joueurs** — 1 si `N` figure dans `joueursIdeal`, 0.6 sinon.
 
-**Durée** — soit `T` le temps disponible en minutes. 1 si `dureeMax ≤ T`,
+**Durée** — soit `T` le temps de jeu maximum accepté, en minutes. 1 si `dureeMax ≤ T`,
 sinon `max(0, 1 − (dureeMax − T) / T)`. Le score atteint 0 quand le jeu dure
 le double du temps disponible. Un jeu plus court que le budget n'est jamais
 pénalisé.
@@ -141,13 +148,15 @@ code. Ce sont des réglages qui ne se trouvent qu'à l'usage.
 Une question par écran, plein écran, gros boutons tactiles :
 
 1. **Combien de joueurs ?** — 1, 2, 3, 4, 5, 6, 7+
-2. **Combien de temps devant vous ?** — moins de 30 min, 30–60, 60–90, plus de 90, peu importe
+2. **Temps de jeu maximum ?** — 30 min, 45 min, 1 h, 1 h 30, 2 h, peu importe
 3. **Âge du plus jeune ?** — 6, 8, 10, 12, 14, que des adultes
 4. **Coop ou chacun pour soi ?** — coopératif, compétitif, peu importe
 5. **Envie de se creuser la tête ?** — léger, moyen, costaud, peu importe
 
-Les tranches de durée fixent `T` à 30, 60 ou 90 minutes ; « plus de 90 » et
-« peu importe » suppriment la contrainte.
+La durée est posée comme un plafond, pas comme une fourchette : le score ne
+regarde que `dureeMax`, et une fourchette laisserait croire qu'un jeu trop
+court est pénalisé. La réponse fixe directement `T` ; « peu importe » supprime
+la contrainte.
 
 **Sortie anticipée.** Un bouton « Voir les N jeux » apparaît dès la question 1
 répondue et reste visible ensuite, son compteur reflétant les jeux encore en
@@ -155,8 +164,13 @@ lice. Le nombre de joueurs suffit à produire un classement utile ; les autres
 questions ne font que l'affiner. Personne ne doit répondre à cinq questions
 pour obtenir une réponse.
 
-**Résultats.** Les trois meilleurs jeux en grand, avec score et pénalités
-expliquées, puis un bouton « voir tout le classement » qui déroule le reste.
+**Résultats.** Tous les jeux à égalité au meilleur score sont affichés en
+grand, avec score et pénalités expliquées ; un bouton « voir tout le
+classement » déroule le reste, en cartes compactes.
+
+Le groupe de tête n'est pas coupé à un nombre fixe : trancher à trois écarte
+un quatrième jeu tout aussi bien classé, ce que rien ne justifie. La coupure
+se fait sur le score, pas sur un rang.
 
 **Révision.** Les réponses restent affichées en puces cliquables au-dessus des
 résultats (« 4 joueurs · 60 min · 10 ans ») et se modifient sans recommencer
@@ -176,9 +190,21 @@ joueurs.
 Panneau de filtres à gauche sur desktop, replié en haut sur mobile.
 
 Chaque ligne affiche nom, joueurs, durée, âge, type et complexité, et se
-déplie en place pour montrer la fiche complète avec les tags. À l'échelle
+déplie en place pour montrer les tags et le lien BoardGameGeek. À l'échelle
 d'une collection personnelle, un dépliant est plus rapide qu'une navigation
 vers une page dédiée.
+
+**Tags cliquables.** Cliquer un tag dans une fiche coche le filtre
+correspondant ; recliquer le décoche. Sans cette symétrie, le geste d'aller
+n'aurait pas d'équivalent pour revenir. Les tags actifs sont teintés en plein
+dans toute la liste, pour que l'état des filtres se lise sans regarder le
+panneau. Les tags de l'assistant restent inertes : il n'y a pas de liste à
+filtrer sur cet écran.
+
+**Lien BoardGameGeek.** Affiché quand `bggId` est renseigné, il ouvre la fiche
+d'origine dans un nouvel onglet (`target="_blank"` avec
+`rel="noopener noreferrer"`, pour que la page ouverte ne garde pas de
+référence sur la nôtre).
 
 ## Page d'administration
 
@@ -285,13 +311,12 @@ peut pas héberger ce token, et l'API ne renvoie pas d'en-têtes CORS. Un import
 BGG imposerait donc un script hors ligne ou une GitHub Action. Les données
 sont saisies à la main.
 
-**Également hors périmètre :** images de boîtes, liens BGG, notes
-personnelles, temps d'explication des règles, historique des parties,
-extensions, backend, authentification, tests automatisés.
+**Également hors périmètre :** notes personnelles, temps d'explication des
+règles, historique des parties, extensions, backend, authentification, tests
+automatisés.
 
 ## Évolutions possibles
 
-- Images de boîtes dans le mode Collection, via un champ `image` par jeu.
 - Import BGG par script Node local, token en variable d'environnement,
   alimentant `games.json` sans passer par la page d'admin.
 - Écriture directe dans le dépôt depuis la page d'admin, via l'API GitHub et
