@@ -1,0 +1,1355 @@
+[
+  {
+    "id": "7-wonders-duel",
+    "nom": "7 Wonders Duel",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 2.23,
+    "tags": [
+      "cartes",
+      "draft",
+      "duel"
+    ],
+    "bggId": 173346,
+    "image": "img/7-wonders-duel.webp"
+  },
+  {
+    "id": "aeon-s-end-legacy",
+    "nom": "Aeon's End: Legacy",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 60,
+    "dureeMax": 90,
+    "ageMin": 14,
+    "type": "coop",
+    "complexite": 2.87,
+    "tags": [
+      "deck-building",
+      "campagne"
+    ],
+    "bggId": 241451,
+    "image": "img/aeon-s-end-legacy.webp"
+  },
+  {
+    "id": "age-of-innovation",
+    "nom": "Age of Innovation",
+    "joueursMin": 1,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 60,
+    "dureeMax": 150,
+    "ageMin": 14,
+    "type": "competitif",
+    "complexite": 4.26,
+    "tags": [
+      "gestion",
+      "expert"
+    ],
+    "bggId": 383179,
+    "image": "img/age-of-innovation.webp"
+  },
+  {
+    "id": "akropolis",
+    "nom": "Akropolis",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.82,
+    "tags": [
+      "tuiles",
+      "familial"
+    ],
+    "bggId": 357563,
+    "image": "img/akropolis.webp"
+  },
+  {
+    "id": "azul",
+    "nom": "Azul",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.77,
+    "tags": [
+      "abstrait",
+      "tuiles",
+      "familial"
+    ],
+    "bggId": 230802,
+    "image": "img/azul.webp"
+  },
+  {
+    "id": "barrage",
+    "nom": "Barrage",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [
+      3,
+      4
+    ],
+    "dureeMin": 60,
+    "dureeMax": 120,
+    "ageMin": 14,
+    "type": "competitif",
+    "complexite": 4.11,
+    "tags": [
+      "gestion",
+      "placement d'ouvriers",
+      "expert"
+    ],
+    "bggId": 251247,
+    "image": "img/barrage.jpg"
+  },
+  {
+    "id": "behind",
+    "nom": "Behind",
+    "joueursMin": 1,
+    "joueursMax": 3,
+    "joueursIdeal": [
+      2,
+      3
+    ],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.7,
+    "tags": [
+      "puzzle"
+    ],
+    "bggId": 423787,
+    "image": "img/behind.webp"
+  },
+  {
+    "id": "behind-purple",
+    "nom": "Behind: Purple",
+    "joueursMin": 1,
+    "joueursMax": 3,
+    "joueursIdeal": [
+      2,
+      3
+    ],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.67,
+    "tags": [
+      "puzzle"
+    ],
+    "bggId": 452286,
+    "image": "img/behind-purple.webp"
+  },
+  {
+    "id": "bomb-busters",
+    "nom": "Bomb Busters",
+    "joueursMin": 2,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 2.01,
+    "tags": [
+      "déduction",
+      "familial"
+    ],
+    "bggId": 413246,
+    "image": "img/bomb-busters.webp"
+  },
+  {
+    "id": "castle-combo",
+    "nom": "Castle Combo",
+    "joueursMin": 2,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 25,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.74,
+    "tags": [
+      "cartes",
+      "familial"
+    ],
+    "bggId": 416851,
+    "image": "img/castle-combo.webp"
+  },
+  {
+    "id": "century-eastern-wonders",
+    "nom": "Century: Eastern Wonders",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 2.11,
+    "tags": [
+      "gestion",
+      "familial"
+    ],
+    "bggId": 242574,
+    "image": "img/century-eastern-wonders.webp"
+  },
+  {
+    "id": "citadels",
+    "nom": "Citadels",
+    "joueursMin": 2,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 60,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 2.05,
+    "tags": [
+      "cartes",
+      "bluff"
+    ],
+    "bggId": 478,
+    "image": "img/citadels.webp"
+  },
+  {
+    "id": "clank-a-deck-building-adventure",
+    "nom": "Clank!: A Deck-Building Adventure",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 60,
+    "ageMin": 12,
+    "type": "competitif",
+    "complexite": 2.23,
+    "tags": [
+      "deck-building",
+      "aventure"
+    ],
+    "bggId": 201808,
+    "image": "img/clank-a-deck-building-adventure.webp"
+  },
+  {
+    "id": "codenames",
+    "nom": "Codenames",
+    "joueursMin": 2,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 15,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.25,
+    "tags": [
+      "ambiance",
+      "mots",
+      "équipes"
+    ],
+    "bggId": 178900,
+    "image": "img/codenames.webp"
+  },
+  {
+    "id": "colt-express",
+    "nom": "Colt Express",
+    "joueursMin": 2,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 40,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.83,
+    "tags": [
+      "programmation",
+      "ambiance",
+      "familial"
+    ],
+    "bggId": 158899,
+    "image": "img/colt-express.webp"
+  },
+  {
+    "id": "concept",
+    "nom": "Concept",
+    "joueursMin": 4,
+    "joueursMax": 12,
+    "joueursIdeal": [],
+    "dureeMin": 40,
+    "dureeMax": 40,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.38,
+    "tags": [
+      "ambiance",
+      "déduction",
+      "équipes"
+    ],
+    "bggId": 147151,
+    "image": "img/concept.webp"
+  },
+  {
+    "id": "condottiere",
+    "nom": "Condottiere",
+    "joueursMin": 2,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.95,
+    "tags": [
+      "cartes",
+      "bluff"
+    ],
+    "bggId": 112,
+    "image": "img/condottiere.webp"
+  },
+  {
+    "id": "courtisans",
+    "nom": "Courtisans",
+    "joueursMin": 3,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.3,
+    "tags": [
+      "cartes",
+      "familial"
+    ],
+    "bggId": 402283,
+    "image": "img/courtisans.webp"
+  },
+  {
+    "id": "cozy-stickerville",
+    "nom": "Cozy Stickerville",
+    "joueursMin": 1,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.2,
+    "tags": [
+      "familial",
+      "flip-and-write"
+    ],
+    "bggId": 456440,
+    "image": "img/cozy-stickerville.webp"
+  },
+  {
+    "id": "daydream",
+    "nom": "Daydream",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.59,
+    "tags": [
+      "cartes"
+    ],
+    "bggId": 433283,
+    "image": "img/daydream.webp"
+  },
+  {
+    "id": "dead-cells-the-rogue-lite-board-game",
+    "nom": "Dead Cells: The Rogue-Lite Board Game",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 75,
+    "ageMin": 14,
+    "type": "coop",
+    "complexite": 2.35,
+    "tags": [
+      "aventure",
+      "combat"
+    ],
+    "bggId": 380135,
+    "image": "img/dead-cells-the-rogue-lite-board-game.webp"
+  },
+  {
+    "id": "dixit",
+    "nom": "Dixit",
+    "joueursMin": 3,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.19,
+    "tags": [
+      "ambiance",
+      "images",
+      "familial"
+    ],
+    "bggId": 39856,
+    "image": "img/dixit.webp"
+  },
+  {
+    "id": "dorfromantik-the-board-game",
+    "nom": "Dorfromantik: The Board Game",
+    "joueursMin": 1,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 8,
+    "type": "coop",
+    "complexite": 1.63,
+    "tags": [
+      "tuiles",
+      "campagne",
+      "familial"
+    ],
+    "bggId": 370591,
+    "image": "img/dorfromantik-the-board-game.webp"
+  },
+  {
+    "id": "elixir",
+    "nom": "Elixir",
+    "joueursMin": 3,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.47,
+    "tags": [
+      "cartes"
+    ],
+    "bggId": 633,
+    "image": "img/elixir.webp"
+  },
+  {
+    "id": "eternal-decks",
+    "nom": "Eternal Decks",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 60,
+    "ageMin": 12,
+    "type": "competitif",
+    "complexite": 2.81,
+    "tags": [
+      "deck-building"
+    ],
+    "bggId": 424981,
+    "image": "img/eternal-decks.webp"
+  },
+  {
+    "id": "exploding-kittens",
+    "nom": "Exploding Kittens",
+    "joueursMin": 2,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 15,
+    "ageMin": 7,
+    "type": "competitif",
+    "complexite": 1.08,
+    "tags": [
+      "cartes",
+      "ambiance",
+      "familial"
+    ],
+    "bggId": 172225,
+    "image": "img/exploding-kittens.webp"
+  },
+  {
+    "id": "flamme-rouge",
+    "nom": "Flamme Rouge",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.71,
+    "tags": [
+      "course",
+      "familial"
+    ],
+    "bggId": 199478,
+    "image": "img/flamme-rouge.webp"
+  },
+  {
+    "id": "focus",
+    "nom": "Focus",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [
+      2
+    ],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.06,
+    "tags": [
+      "abstrait"
+    ],
+    "bggId": 386989,
+    "image": "img/focus.webp"
+  },
+  {
+    "id": "gloomhaven-jaws-of-the-lion",
+    "nom": "Gloomhaven: Jaws of the Lion",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 60,
+    "dureeMax": 120,
+    "ageMin": 14,
+    "type": "coop",
+    "complexite": 3.64,
+    "tags": [
+      "campagne",
+      "combat",
+      "expert"
+    ],
+    "bggId": 291457,
+    "image": "img/gloomhaven-jaws-of-the-lion.webp"
+  },
+  {
+    "id": "hitster",
+    "nom": "Hitster",
+    "joueursMin": 2,
+    "joueursMax": 10,
+    "joueursIdeal": [
+      4,
+      5,
+      6
+    ],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1,
+    "tags": [
+      "ambiance",
+      "musique",
+      "culture générale"
+    ]
+  },
+  {
+    "id": "ito",
+    "nom": "ito",
+    "joueursMin": 2,
+    "joueursMax": 10,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "coop",
+    "complexite": 1.01,
+    "tags": [
+      "ambiance",
+      "communication"
+    ],
+    "bggId": 327778,
+    "image": "img/ito.webp"
+  },
+  {
+    "id": "just-one",
+    "nom": "Just One",
+    "joueursMin": 3,
+    "joueursMax": 7,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 20,
+    "ageMin": 8,
+    "type": "coop",
+    "complexite": 1.03,
+    "tags": [
+      "ambiance",
+      "mots",
+      "familial"
+    ],
+    "bggId": 254640,
+    "image": "img/just-one.webp"
+  },
+  {
+    "id": "kids-chronicles-quest-for-the-moon-stones",
+    "nom": "Kids Chronicles: Quest for the Moon Stones",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 5,
+    "type": "coop",
+    "complexite": 1.17,
+    "tags": [
+      "enfants",
+      "aventure",
+      "campagne"
+    ],
+    "bggId": 340288,
+    "image": "img/kids-chronicles-quest-for-the-moon-stones.webp"
+  },
+  {
+    "id": "le-chateau-blanc",
+    "nom": "Le Château Blanc",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [
+      2,
+      3
+    ],
+    "dureeMin": 60,
+    "dureeMax": 80,
+    "ageMin": 12,
+    "type": "competitif",
+    "complexite": 3.07,
+    "tags": [
+      "gestion",
+      "dés",
+      "placement"
+    ],
+    "bggId": 371942,
+    "image": "img/le-chateau-blanc.webp"
+  },
+  {
+    "id": "legends-of-andor",
+    "nom": "Legends of Andor",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 60,
+    "dureeMax": 90,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 2.77,
+    "tags": [
+      "aventure",
+      "campagne"
+    ],
+    "bggId": 127398,
+    "image": "img/legends-of-andor.webp"
+  },
+  {
+    "id": "living-forest",
+    "nom": "Living Forest",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 40,
+    "dureeMax": 40,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 2.22,
+    "tags": [
+      "deck-building",
+      "course"
+    ],
+    "bggId": 328479,
+    "image": "img/living-forest.webp"
+  },
+  {
+    "id": "marvel-united-x-men",
+    "nom": "Marvel United: X-Men",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 40,
+    "dureeMax": 40,
+    "ageMin": 14,
+    "type": "coop",
+    "complexite": 2.01,
+    "tags": [
+      "cartes"
+    ],
+    "bggId": 336382,
+    "image": "img/marvel-united-x-men.webp"
+  },
+  {
+    "id": "micromacro-crime-city-full-house",
+    "nom": "MicroMacro: Crime City – Full House",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.17,
+    "tags": [
+      "enquête",
+      "observation"
+    ],
+    "bggId": 338834,
+    "image": "img/micromacro-crime-city-full-house.webp"
+  },
+  {
+    "id": "micromacro-crime-city-showdown",
+    "nom": "MicroMacro: Crime City – Showdown",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.0,
+    "tags": [
+      "enquête",
+      "observation"
+    ],
+    "bggId": 398162,
+    "image": "img/micromacro-crime-city-showdown.webp"
+  },
+  {
+    "id": "mindbug-first-contact",
+    "nom": "Mindbug: First Contact",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 20,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.93,
+    "tags": [
+      "cartes",
+      "duel"
+    ],
+    "bggId": 345584,
+    "image": "img/mindbug-first-contact.webp"
+  },
+  {
+    "id": "mr-jack",
+    "nom": "Mr. Jack",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 9,
+    "type": "competitif",
+    "complexite": 2.17,
+    "tags": [
+      "déduction",
+      "duel",
+      "asymétrique"
+    ],
+    "bggId": 21763,
+    "image": "img/mr-jack.webp"
+  },
+  {
+    "id": "my-city",
+    "nom": "My City",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.99,
+    "tags": [
+      "campagne",
+      "tuiles"
+    ],
+    "bggId": 295486,
+    "image": "img/my-city.webp"
+  },
+  {
+    "id": "next-station-paris",
+    "nom": "Next Station: Paris",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 25,
+    "dureeMax": 25,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.75,
+    "tags": [
+      "flip-and-write",
+      "familial"
+    ],
+    "bggId": 403116,
+    "image": "img/next-station-paris.webp"
+  },
+  {
+    "id": "not-alone",
+    "nom": "Not Alone",
+    "joueursMin": 2,
+    "joueursMax": 7,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "un-contre-tous",
+    "complexite": 2.0,
+    "tags": [
+      "cartes",
+      "survie"
+    ],
+    "bggId": 194879,
+    "image": "img/not-alone.webp"
+  },
+  {
+    "id": "odin",
+    "nom": "Odin",
+    "joueursMin": 2,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 20,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.23,
+    "tags": [
+      "cartes",
+      "familial"
+    ],
+    "bggId": 406854,
+    "image": "img/odin.webp"
+  },
+  {
+    "id": "pandemic",
+    "nom": "Pandemic",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 45,
+    "ageMin": 8,
+    "type": "coop",
+    "complexite": 2.39,
+    "tags": [
+      "classique",
+      "gestion"
+    ],
+    "bggId": 30549,
+    "image": "img/pandemic.webp"
+  },
+  {
+    "id": "perfect-words",
+    "nom": "Perfect Words",
+    "joueursMin": 1,
+    "joueursMax": 6,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.5,
+    "tags": [
+      "mots",
+      "ambiance"
+    ],
+    "bggId": 393352,
+    "image": "img/perfect-words.webp"
+  },
+  {
+    "id": "quacks",
+    "nom": "Quacks",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.94,
+    "tags": [
+      "stop ou encore",
+      "sacs"
+    ],
+    "bggId": 244521,
+    "image": "img/quacks.webp"
+  },
+  {
+    "id": "ready-set-bet",
+    "nom": "Ready Set Bet",
+    "joueursMin": 2,
+    "joueursMax": 9,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 60,
+    "ageMin": 14,
+    "type": "competitif",
+    "complexite": 1.35,
+    "tags": [
+      "ambiance",
+      "paris",
+      "course"
+    ],
+    "bggId": 351040,
+    "image": "img/ready-set-bet.webp"
+  },
+  {
+    "id": "rhino-hero-super-battle",
+    "nom": "Rhino Hero: Super Battle",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 20,
+    "ageMin": 5,
+    "type": "competitif",
+    "complexite": 1.1,
+    "tags": [
+      "adresse",
+      "enfants"
+    ],
+    "bggId": 218333,
+    "image": "img/rhino-hero-super-battle.webp"
+  },
+  {
+    "id": "sea-salt-and-paper",
+    "nom": "Sea Salt & Paper",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [
+      2,
+      3
+    ],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.5,
+    "tags": [
+      "cartes",
+      "familial",
+      "stop ou encore"
+    ]
+  },
+  {
+    "id": "sky-team",
+    "nom": "Sky Team",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 20,
+    "ageMin": 12,
+    "type": "coop",
+    "complexite": 2.04,
+    "tags": [
+      "dés",
+      "duel"
+    ],
+    "bggId": 373106,
+    "image": "img/sky-team.webp"
+  },
+  {
+    "id": "skyjo",
+    "nom": "Skyjo",
+    "joueursMin": 2,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.05,
+    "tags": [
+      "cartes",
+      "familial"
+    ],
+    "bggId": 204135,
+    "image": "img/skyjo.webp"
+  },
+  {
+    "id": "spirit-island",
+    "nom": "Spirit Island",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [
+      1,
+      2
+    ],
+    "dureeMin": 90,
+    "dureeMax": 120,
+    "ageMin": 13,
+    "type": "coop",
+    "complexite": 4.08,
+    "tags": [
+      "gestion",
+      "asymétrique",
+      "puzzle",
+      "expert"
+    ],
+    "bggId": 162886,
+    "image": "img/spirit-island.webp"
+  },
+  {
+    "id": "splendor",
+    "nom": "Splendor",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.77,
+    "tags": [
+      "gestion",
+      "familial"
+    ],
+    "bggId": 148228,
+    "image": "img/splendor.webp"
+  },
+  {
+    "id": "splendor-duel",
+    "nom": "Splendor Duel",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 2.04,
+    "tags": [
+      "gestion",
+      "duel"
+    ],
+    "bggId": 364073,
+    "image": "img/splendor-duel.webp"
+  },
+  {
+    "id": "taco-cat-goat-cheese-pizza",
+    "nom": "Taco Cat Goat Cheese Pizza",
+    "joueursMin": 2,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 10,
+    "dureeMax": 15,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.0,
+    "tags": [
+      "cartes",
+      "ambiance",
+      "rapidité",
+      "familial"
+    ],
+    "bggId": 253664
+  },
+  {
+    "id": "take-time",
+    "nom": "Take Time",
+    "joueursMin": 2,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.77,
+    "tags": [
+      "ambiance"
+    ],
+    "bggId": 440540,
+    "image": "img/take-time.webp"
+  },
+  {
+    "id": "telestrations",
+    "nom": "Telestrations",
+    "joueursMin": 4,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 30,
+    "ageMin": 12,
+    "type": "competitif",
+    "complexite": 1.07,
+    "tags": [
+      "ambiance",
+      "dessin"
+    ],
+    "bggId": 46213,
+    "image": "img/telestrations.webp"
+  },
+  {
+    "id": "that-s-not-a-hat",
+    "nom": "That's Not a Hat",
+    "joueursMin": 3,
+    "joueursMax": 8,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 20,
+    "ageMin": 8,
+    "type": "competitif",
+    "complexite": 1.06,
+    "tags": [
+      "mémoire",
+      "ambiance",
+      "familial"
+    ],
+    "bggId": 375651,
+    "image": "img/that-s-not-a-hat.webp"
+  },
+  {
+    "id": "the-court-of-miracles",
+    "nom": "The Court of Miracles",
+    "joueursMin": 2,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 60,
+    "ageMin": 12,
+    "type": "competitif",
+    "complexite": 2.06,
+    "tags": [
+      "majorité",
+      "bluff"
+    ],
+    "bggId": 270956,
+    "image": "img/the-court-of-miracles.webp"
+  },
+  {
+    "id": "the-crew-mission-deep-sea",
+    "nom": "The Crew: Mission Deep Sea",
+    "joueursMin": 2,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 20,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 2.06,
+    "tags": [
+      "cartes",
+      "plis"
+    ],
+    "bggId": 324856,
+    "image": "img/the-crew-mission-deep-sea.webp"
+  },
+  {
+    "id": "the-game",
+    "nom": "The Game",
+    "joueursMin": 1,
+    "joueursMax": 5,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 20,
+    "ageMin": 8,
+    "type": "coop",
+    "complexite": 1.24,
+    "tags": [
+      "cartes",
+      "familial"
+    ],
+    "bggId": 173090,
+    "image": "img/the-game.webp"
+  },
+  {
+    "id": "the-king-is-dead-second-edition",
+    "nom": "The King Is Dead: Second Edition",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 45,
+    "ageMin": 12,
+    "type": "competitif",
+    "complexite": 2.17,
+    "tags": [
+      "majorité",
+      "abstrait"
+    ],
+    "bggId": 319966,
+    "image": "img/the-king-is-dead-second-edition.webp"
+  },
+  {
+    "id": "the-loop",
+    "nom": "The LOOP",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 45,
+    "dureeMax": 60,
+    "ageMin": 12,
+    "type": "coop",
+    "complexite": 2.78,
+    "tags": [
+      "deck-building",
+      "aventure"
+    ],
+    "bggId": 316412,
+    "image": "img/the-loop.webp"
+  },
+  {
+    "id": "the-lord-of-the-rings-duel-for-middle-earth",
+    "nom": "The Lord of the Rings: Duel for Middle-earth",
+    "joueursMin": 2,
+    "joueursMax": 2,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 2.07,
+    "tags": [
+      "cartes",
+      "duel"
+    ],
+    "bggId": 421006,
+    "image": "img/the-lord-of-the-rings-duel-for-middle-earth.webp"
+  },
+  {
+    "id": "the-lord-of-the-rings-the-fellowship-of-the-ring-trick-taking-game",
+    "nom": "The Lord of the Rings: The Fellowship of the Ring – Trick-Taking Game",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.93,
+    "tags": [
+      "plis",
+      "cartes"
+    ],
+    "bggId": 429293,
+    "image": "img/the-lord-of-the-rings-the-fellowship-of-the-ring-trick-taking-game.webp"
+  },
+  {
+    "id": "the-mind",
+    "nom": "The Mind",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 20,
+    "ageMin": 8,
+    "type": "coop",
+    "complexite": 1.07,
+    "tags": [
+      "cartes",
+      "ambiance"
+    ],
+    "bggId": 244992,
+    "image": "img/the-mind.webp"
+  },
+  {
+    "id": "too-many-bones",
+    "nom": "Too Many Bones",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [
+      1,
+      2
+    ],
+    "dureeMin": 60,
+    "dureeMax": 120,
+    "ageMin": 14,
+    "type": "coop",
+    "complexite": 3.87,
+    "tags": [
+      "dés",
+      "aventure",
+      "combat",
+      "expert"
+    ],
+    "bggId": 192135,
+    "image": "img/too-many-bones.webp"
+  },
+  {
+    "id": "wavelength",
+    "nom": "Wavelength",
+    "joueursMin": 2,
+    "joueursMax": 12,
+    "joueursIdeal": [],
+    "dureeMin": 30,
+    "dureeMax": 45,
+    "ageMin": 14,
+    "type": "competitif",
+    "complexite": 1.1,
+    "tags": [
+      "ambiance",
+      "équipes",
+      "communication"
+    ],
+    "bggId": 262543,
+    "image": "img/wavelength.webp"
+  },
+  {
+    "id": "welcome-to",
+    "nom": "Welcome To...",
+    "joueursMin": 1,
+    "joueursMax": 100,
+    "joueursIdeal": [],
+    "dureeMin": 25,
+    "dureeMax": 25,
+    "ageMin": 10,
+    "type": "competitif",
+    "complexite": 1.85,
+    "tags": [
+      "flip-and-write",
+      "familial"
+    ],
+    "bggId": 233867,
+    "image": "img/welcome-to.webp"
+  },
+  {
+    "id": "zombicide-gear-up",
+    "nom": "Zombicide: Gear Up",
+    "joueursMin": 1,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 20,
+    "dureeMax": 30,
+    "ageMin": 10,
+    "type": "coop",
+    "complexite": 1.86,
+    "tags": [
+      "cartes",
+      "combat"
+    ],
+    "bggId": 364792,
+    "image": "img/zombicide-gear-up.webp"
+  },
+  {
+    "id": "zombie-kidz-evolution",
+    "nom": "Zombie Kidz Evolution",
+    "joueursMin": 2,
+    "joueursMax": 4,
+    "joueursIdeal": [],
+    "dureeMin": 15,
+    "dureeMax": 15,
+    "ageMin": 5,
+    "type": "coop",
+    "complexite": 1.38,
+    "tags": [
+      "enfants",
+      "campagne"
+    ],
+    "bggId": 256952,
+    "image": "img/zombie-kidz-evolution.webp"
+  }
+]
